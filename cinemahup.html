@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CinemaHub</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/norm.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script type="text/javascript" src="js/cinemahup.js"></script>
+</head>
+
+<body id="body" onload="cinema()">
+    <!--&&&&&&&&&&&&&&&&&&&&     home page     &&&&&&&&&&&&&&&&-->
+    <section name="home" class="home" id="home">
+
+        <nav class="header">
+            <div class="containerr">
+                <button id="check">&#9776;</button>
+                <a onclick="cinema1()" class="title" href="#home">Cinema<span>Hub</span></a>
+                <ul>
+                    <li onclick="cinema7()"><a class="nav" href="#Actors">Actors</a></li>
+                    <li onclick="cinema6()"><a class="nav" href="#Actress">Actresses</a></li>
+                    <li onclick="cinema5()"><a class="nav" href="#Dirctors">Directors</a></li>
+                    <li id="loin" onclick="cinema3()"><a class="nav" href="#login">login</a></li>
+                    <li id="reg" onclick="cinema2()"><a class="nav" href="#register">sign up</a></li>
+                    <li id="logout" onclick="logoutbtn()"><a class="nav" href="#home">logout</a></li>
+                    <li id="adminn" onclick="cinema8()"><a class="nav" href="#admin">admin</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div style="position: relative;" class="containerr">
+            <div class="container">
+                <div class="side">
+                    <button id="x">X</button>
+                    <ul class="sidelist">
+                        <li><a class="nav" href="#contact">contact us</a></li>
+                        <li onclick="cinema4()"><a class="nav" href="#about">about us</a></li>
+                        <li class="team">TEAM<span>99</span></li>
+                    </ul>
+                </div>
+                <div class="sliderr">
+                    <div class="sliderimg">
+                        <img src="img/capture1.jpg" alt="">
+                        <img src="img/capture2.jpg" alt="">
+                        <img src="img/capture3.jpg" alt="">
+                        <img src="img/capture4.jpg" alt="">
+                        <img src="img/capture1.jpg" alt="">
+
+                    </div>
+                </div>
+                <button id="prev">&#129120;</button>
+                <button id="nextt">&#129122;</button>
+            </div>
+        </div>
+        <div class="containerr">
+            <div class="main">
+                <div class="left">
+                    <a onclick="cinema7()" href="#Actors">
+                        <h2>Famous Actors</h2>
+                    </a>
+                    <a onclick="cinema7()" href="#Actors"><img src="img/a1.jpg" alt=""></a>
+                </div>
+                <div class="middle">
+                    <a href="#Actress" onclick="cinema6()">
+                        <h2>Famous Actresses</h2>
+                    </a>
+                    <a href="#Actress" onclick="cinema6()"><img src="img/a2.jpg" alt=""></a>
+                </div>
+                <div class="right">
+                    <a href="#Dirctors" onclick="cinema5()">
+                        <h2>Famous Directors</h2>
+                    </a>
+                    <a href="#Dirctors" onclick="cinema5()"><img src="img/d.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <article class="contact">
+            <div class="containerr">
+                <section class="info fl-left">
+                    <h2>Contact Me</h2>
+                    <strong>Team Members :-</strong>
+                    <ul>
+                        <li>Eslam Shaban Abdallah</li>
+                        <li>Al hassan Ibrahim gad elrab</li>
+                        <li>Islam Mohamed Gamal</li>
+                        <li>El Hassan El Seid </li>
+                        <li>Ahmed Ashraf</li>
+                        <li> Walled Shaban</li>
+                    </ul>
+
+                    <p>
+                        Fcis Ain Shams University<br> Cairo
+                        <br> Egypt
+                    </p>
+                    <p>
+                        <strong>Email:</strong>team99@cis.asu.edu.eg<br>
+                        <strong>Phone:</strong>010123456789
+                    </p>
+                </section>
+
+                <form method="POST" autocomplete="on" class="form fl-left" name="inputForm" onsubmit="return validateForm();">
+                    <label>Name *</label>
+                    <input name="name" type="text" id="contact">
+
+                    <label>Email Address *</label>
+                    <input name="email" type="text">
+
+                    <label>Phone *</label>
+                    <input name="phone" type="number">
+
+                    <label>Message</label>
+                    <textarea name="message"></textarea>
+
+                    <input class="my-button" type="submit" value="Contact Me">
+                </form>
+            </div>
+        </article>
+        <!-- Start Contat me -->
+
+
+        <!-- Start footer -->
+        <footer class="footer">
+            <div class="containerr">
+                <p>Copyright &copy; 2020 Team99</p>
+                <span>Created by :-<br>team99</span>
+            </div>
+        </footer>
+        <!-- End footer -->
+    </section>
+    <!--&&&&&&&&&&&&&&&&&&&&     register page &&&&&&&&&&&&&&&&-->
+    <section name="register" class="register" id="register">
+
+        <div class="container">
+            <nav class="header">
+                <a onclick="cinema1()" class="title" href="#home">Cinema<span>Hub</span></a>
+                <ul>
+                    <li onclick="cinema1()"><a class="nav" href="#home">Home</a></li>
+                    <li onclick="cinema4()"><a class="nav" href="#about">about us</a></li>
+                    <li><a class="nav" href="#">Privacy policy</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--end nav-->
+        <!--start header-->
+
+        <header>
+            <div class="container">
+                <h1>hello....,</h1>
+                <img src="img/giphy-unscreen.gif" />
+                <p class="switsh">If you have an account, click
+                    <a class="sw" href="#login" onclick="cinema3()">login</a>
+                </p>
+            </div>
+        </header>
+
+        <!--end header-->
+        <!--Start article-->
+        <article>
+            <div class="container">
+                <!--start form-->
+                <form id="registerform" name="register" action="/" target="_blank" method="post" autocomplete="on">
+                    <fieldset>
+                        <legend>Register</legend>
+                        <div class="form">
+                            <!--Fname-->
+                            <label for="Fname">first name:</label>
+                            <input class="in" type="text" id="Fname" name="Fname" required placeholder="example:hassan" pattern="[A-Za-z]+">
+                            <!--Lname-->
+                            <br><label for="Lname">last name:</label>
+                            <input class="in" type="text" id="Lname" name="Lname" required placeholder="example:elmatarwy" pattern="[A-Za-z]+">
+                            <!--username-->
+                            <br><label for="username">username:</label>
+                            <input class="in" type="text" id="username" name="username" required placeholder="example:gf251sss" pattern="[A-Za-z0-9]+">
+                            <!--face image-->
+                            <br><label for="img">upload your image:</label>
+                            <input type="file" id="img" name="img" accept="image/*">
+                            <!--email-->
+                            <br><label for="email">Email:</label>
+                            <input class="in" type="email" id="email" name="email" required placeholder="@gmail.com " pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <!--password-->
+                            <br><label for="password ">password:</label>
+                            <input class="in" type="password" id="password" name="password" minlength="6" required pattern="[A-Za-z0-9]+" title=" at least 6 numbers">
+                            <!--Gender-->
+                            <br><label for="Gender ">Gender:</label>
+                            <input type="radio" id="gender" name="gender" value="Male" required><label class="ge ">Male</label>
+                            <input type="radio" id="gender" name="gender" value="Female" required><label class="ge ">Female</label>
+                        </div>
+                        <!--checkbox of Privacy policy-->
+                        <input style="width: 20px;height: 20px;" type="checkbox" id="check" name="Privacy_policy " value="agree " required>
+                        <span class="polici">I've read <a href="# ">Privacy policy</a> And I agree...</span>
+                    </fieldset>
+                    <div style="text-align: center;">
+
+                        <!--sign up button-->
+
+                        <input type="submit" class="submit" value="sign up" onclick="validregister()" />
+                    </div>
+                </form>
+                <!--end form-->
+            </div>
+        </article>
+
+        <!--end article-->
+
+        <div class="container">
+            <footer>
+                <p>&copy; 2020 team99</p>
+                <p>created by Elhassan elmatarwy</p>
+
+            </footer>
+        </div>
+    </section>
+    <!--&&&&&&&&&&&&&&&&&&&&     login page    &&&&&&&&&&&&7&&&&-->
+    <section name="login" class="login" id="login">
+        <nav class="header">
+            <a onclick="cinema1()" class="title" href="#home">Cinema<span>Hub</span></a>
+            <ul>
+                <li onclick="cinema1()"><a class="nav" href="#home">Home</a></li>
+                <li onclick="cinema4()"><a class="nav" href="#about">About us</a></li>
+            </ul>
+        </nav>
+
+
+        <section class="section">
+            <form name="loginForm" action="/" target="_blank">
+                <input class="input" type="email" name="email" required placeholder="Email adress " pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <br>
+                <input class="input" type="password" name="pass" placeholder="password" required>
+                <input class="btn" type="submit" value="login" onclick="validLogin()">
+                <hr>
+                <P>
+                    haven't an account? <a onclick="cinema2()" href="#register">Register now</a>
+                </P>
+            </form>
+        </section>
+
+
+        <footer class="footer">
+            <p>
+                &copy; 2020 Team99
+            </p>
+            <p>
+                Created by:Islam Mohamed , elhassan elmatarwy
+            </p>
+        </footer>
+    </section>
+    <!--&&&&&&&&&&&&&&&&&&&&     about page    &&&&&&&&&&&&7&&&&-->
+    <section name="about" class="about" id="about">
+        <div class="main">
+            <div class="description">
+                <h1 class="title">Cinema<span>Hup</span></h1>
+                <p>This website made by team99 and talkes about some of the most famouse actors and directors in the world ,you can find more information about the team below
+                    <br><br> Created by Ahmed Ashraf
+                </p>
+            </div>
+            <h1 class="pm">project members</h1>
+            <div class="top">
+                <div class="topleft">
+                    <h2>Walid Shaaban</h2>
+                    <p>ID:20191700746 <br> Created the Home page and designed it (home.html)</p>
+                </div>
+                <div class="topright">
+                    <h2>Ahmed Ashraf</h2>
+                    <p>ID:20191700016 <br> Created this page and designed it (about.html)</p>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="midleft">
+                    <h2>Elhasan Ibrahim</h2>
+                    <p>ID:20191700125 <br> Created actors ,acress and directors pages and designed it</p>
+                </div>
+                <div class="midright">
+                    <h2>Elhassan Elsayed</h2>
+                    <p>ID:20191700126 <br>Created the regester page and designed it(regester.html) and helped coloring the website</p>
+                </div>
+            </div>
+            <div class="buttom">
+                <div class="left">
+                    <h2>Eslam Shaaban</h2>
+                    <p>ID:20191700108 <br> Created actors ,acress and directors pages and designed it</p>
+                </div>
+                <div class="right">
+                    <h2>Eslam mohamed</h2>
+                    <p>ID:20191700111 <br>Created the login page and designed it</p>
+                </div>
+            </div>
+            <div class="back">
+                <a onclick="cinema1()" href="#home"> Home Page </a>
+            </div>
+        </div>
+    </section>
+    <!--&&&&&&&&&&&&&&&&&&&&     admin page    &&&&&&&&&&&&7&&&&-->
+    <section name="admin" class="admin" id="admin">
+        <nav class="header">
+            <div class="containerr">
+                <a onclick="cinema1()" class="title" href="#home">Cinema<span>Hub</span></a>
+                <ul>
+                    <li onclick="cinema7()"><a class="nav" href="#Actors">Actors</a></li>
+                    <li onclick="cinema6()"><a class="nav" href="#Actress">Actresses</a></li>
+                    <li onclick="cinema5()"><a class="nav" href="#Dirctors">Directors</a></li>
+                    <li id="logout"><a class="nav" href="cinemahup.html">logout</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <article>
+            <div class="containerr">
+                <h1>choose background</h1>
+                <button class="btnn" onclick="adminnn('cadetblue')"><div  class="b1"></div></button>
+                <button class="btnn" onclick="adminnn('crimson')"><div  class="b2"></div></button>
+                <button class="btnn" onclick="adminnn('darkmagenta')"><div  class="b3"></div></button>
+                <button class="btnn" onclick="adminnn('darkslategray')"><div  class="b4"></div></button>
+                <button class="btnn" onclick="adminnn('gold')"><div  class="b5"></div></button>
+            </div>
+        </article>
+    </section>
+    <!--&&&&&&&&&&&&&&&&&&&&     Dirctors page    &&&&&&&&&&&&7&&&&-->
+    <section name="Dirctors" class="Dirctors" id="Dirctors">
+        <!-- Start Header -->
+
+        <header class="header">
+            <section class="slider3">
+                <div class="container">
+                    <div class="intro">
+                        <h2>Cinema Hub</h2>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="navbar">
+                <div class="container">
+                    <h2 class="fl-left">Cinema <span>Hub</span></h2>
+                    <ul>
+                        <li onclick="cinema1()"><a href="#home">Home</a></li>
+                        <li onclick="cinema7()"><a href="#Actors">Actors</a></li>
+                        <li onclick="cinema6()"><a href="#Actress">Actresses</a></li>
+                        <li class="active" onclick="cinema5()"><a href="#">Directors</a></li>
+                        <li onclick="cinema4()"><a href="#about">About us</a></li>
+                        <li><a href="#contact">Contact me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- End Header -->
+
+
+        <!-- Sart Christopher Nolan-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Christopher Nolan</h2>
+                    <img height="670px" width="770px" src="image/Christopher Nolan2.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About his Life</h2>
+                    <p>Christopher Nolan received attention for his early films, Following (1998) and Memento (2000). After directing Insomnia, Nolan's next film was Batman Begins, a re-launch of the comic-book franchise that became a worldwide hit. The
+                        film's sequel, The Dark Knight, broke box office records, and Nolan's sci-fi thriller, Inception, became another blockbuster two years later. In 2012, he produced the third film of his Batman saga, The Dark Knight Rises. Nolan
+                        followed with the space odyssey Interstellar in 2014 and the World War II film Dunkirk in 2017.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p>
+                        2002, Golden Globe — Best Screenplay - Motion Picture: Nominee 2001, Oscar — Best Writing (Original Screenplay): Nominee 2018, Golden Globe — Best Director - Motion Picture: Nominee 2011, BAFTA Film Awards — Best Original Screenplay: Nominee 2010, Oscar
+                        — Best Motion Picture of the Year: Nominee 2011, Golden Globe — Best Screenplay - Motion Picture: Nominee 2011, Golden Globe — Best Director - Motion Picture: Nominee 2011, BAFTA Film Awards — Best Director: Nominee 2011, Critics'
+                        Choice Movie Awards — Best Original Screenplay: Nominee 2011, BAFTA Film Awards — Best Film: Nominee 2018, BAFTA Film Awards — Best Film: Nominee 2010, Oscar — Best Writing (Original Screenplay): Nominee
+                    </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>His best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/Interstellar.jpg" alt="Test" width=200px height=180px>
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/dunkrik.jpg" alt="Test" width=200px height=180px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/the prestige.jpg" alt="Test" width=200px height=180px>
+
+                    </div>
+
+                    <div class="linkes">
+                        <a class="o_link1" href="https://www.imdb.com/title/tt0816692/?ref_=nm_knf_i1"> Interstellar </a>
+                        <a class="o_link2" href="https://www.imdb.com/title/tt5013056/?ref_=nm_knf_t2"> dunkrik</a>
+                        <a class="o_link3" href="https://www.imdb.com/title/tt0482571/?ref_=nm_knf_t3"> the prestige</a>
+                    </div>
+
+                </section>
+            </div>
+        </article>
+
+
+        <!-- End Christopher Nolan-->
+
+
+        <!-- Start Quentin Tarantino-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Quentin Tarantino</h2>
+                    <img height="630px" width="770px" src="image/tarantino.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About his Life</h2>
+                    <p>
+                        Quentin Jerome Tarantino (/ˌtærənˈtiːnoʊ/; born March 27, 1963)[1] is an American film director, screenwriter, producer, and actor. His films are characterized by nonlinear storylines, aestheticization of violence, extended scenes of dialogue, ensemble
+                        casts, references to popular culture and a wide variety of other films, soundtracks primarily containing songs and score pieces from the 1960s to the 1980s, alternate history, and features of neo-noir film. He began his career
+                        as an independent filmmaker with the release of Reservoir Dogs in 1992, which was funded by money from the sale of his screenplay True Romance (1993). Empire magazine hailed Reservoir Dogs as the "Greatest Independent Film of All
+                        Time".
+                    </p>
+                </section>
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p> 1994 -oscar and golden globe -best director : won - best original scenario : nominee , 2009 - oscar and golden globe -best director : nominee -best original scenario : nominee ,2012 -oscar and golden globe - best director : nominee
+                        - best original scenario : won , 2007 & 2009 - canne - golden palm :nominee</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>His best movies</h2>
+
+                    <div class="movies">
+                        <img class="img1" src="image/reservior dogs.jpg" alt="Test" width=210px height="190px">
+
+                    </div>
+
+                    <div class="movies">
+                        <img class="img2" src="image/plup fiction.jpg" alt="Test" width=210px height=190px>
+
+                    </div>
+
+                    <div class="movies">
+                        <img class="img3" src="image/the hateful eight.jpg" alt="Test" width=210px height=190px>
+
+                    </div>
+
+                    <div class="linkes">
+                        <a class="p_link1" href="https://www.imdb.com/title/tt0105236/?ref_=nm_knf_t1"> reservior dogs </a>
+                        <a class="p_link2" href="https://www.imdb.com/title/tt0110912/?ref_=nm_knf_t2"> plup fiction</a>
+                        <a class="p_link3" href="https://www.imdb.com/title/tt3460252/?ref_=nm_knf_t4"> the hateful eight</a>
+                    </div>
+
+                </section>
+            </div>
+        </article>
+
+        <!--end Quentin Tarantino-->
+
+
+
+        <!--start Zack Snyder-->
+        <article class="about-me">
+            <div class="container">
+                <div class="image fl-left">
+                    <h2>Zack Snyder</h2>
+                    <img height="650px" width="770px" src="image/Zack_Snyder.jpg" alt="Test">
+                </div>
+                <section class="info fl-left">
+                    <h2>About his Life</h2>
+                    <p>
+                        Zachary Edward Snyder (born March 1, 1966) is an American film director, producer, and screenwriter. He made his feature film debut in 2004 with a remake of the 1978 horror film Dawn of the Dead. Since then, he has directed or produced a number of comic
+                        book and superhero films, including 300 (2006) and Watchmen (2009), as well as the Superman film that started the DC Extended Universe, Man of Steel (2013) and its follow-ups, Batman v Superman: Dawn of Justice (2016) and Justice
+                        League (2017). He also served as co-screenwriter for 300, Sucker Punch (2011)
+                    </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p> academy award -(2010)-best director :nominee - (2008) - best director : won - best writing : nominee , cannes festival awards -(2004) - golden camera : nominee , dragon awards - (2017) - best science fiction and fantasy movie : won
+                        , hollywood film award - (2007) - best dramatic presentation : won </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>His best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/300.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/watch man.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/man of steel.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="linkes">
+                        <a class="q_link1" href="https://www.imdb.com/title/tt0416449/?ref_=nm_knf_t2"> 300 </a>
+                        <a class="q_link2" href="https://www.imdb.com/title/tt0409459/?ref_=nm_knf_t3"> watchmen</a>
+                        <a class="q_link3" href="https://www.imdb.com/title/tt0770828/?ref_=nm_knf_t4 "> man of steel</a>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+        <!--end Zack Snyder-->
+
+        <!-- Sart Martin Scorsese-->
+        <article class="about-me">
+            <div class="container">
+                <div class="image fl-left">
+                    <h2>Martin Scorsese</h2>
+                    <img height="700px" width="770px" src="image/Martin Scorsese.jpg" alt="Test">
+                </div>
+                <section class="info fl-left">
+                    <h2>About his Life</h2>
+                    <p>Martin Charles Scorsese ( born November 17, 1942) is an American film director, producer, screenwriter, and actor. One of the major figures of the New Hollywood era, he is widely regarded as one of the most significant and influential
+                        directors in film history. Scorsese's body of work explores themes such as Italian-American identity, Catholic concepts of guilt and redemption, faith, machismo, crime and tribalism. Many of his films are known for their depiction
+                        of violence, and the liberal use of profanity and rock music. In 1990, he founded The Film Foundation, a nonprofit organization dedicated to film preservation, in 2007 he founded the World Cinema Foundation and in 2017, he introduced
+                        the African Film Heritage Project. </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p> Oscar (2007) best achievement of directing : won - (2020) best achievement of directing : nominee - (2014) best motion picture : nominee - (1981 , 1989) best director : nominee , Golden Globe - (2003,2007,2012) best director : won
+                        - (1981,1996,2005,2020) best director : nominee , Emmy awards -(2011) outstanding director for a drama series : won -(2012) outstanding director for nonfiction programming : won </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>His best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/goodfelles.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/taxi driver.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/mean streets.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="linkes">
+                        <a class="r_link1" href="https://www.imdb.com/title/tt0099685/?ref_=nm_knf_t3">goodfellas </a>
+                        <a class="r_link2" href="https://www.imdb.com/title/tt0075314/?ref_=nm_knf_t1"> taxi driver</a>
+                        <a class="r_link3" href="https://www.imdb.com/title/tt0070379/?ref_=nm_knf_t2 ">mean streets</a>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <!--end Martin Scorsese-->
+
+        <!-- Start Woody Allen-->
+        <article class="about-me">
+            <div class="container">
+                <div class="image fl-left">
+                    <h2>Woody Allen</h2>
+                    <img height="650px" width="770px" src="image/woody allen.jpg" alt="Test">
+                </div>
+                <section class="info fl-left">
+                    <h2>About his Life</h2>
+                    <p> Woody Allen (born December 1, 1935, New York, USA). American director, actor, screenwriter, playwright and jazz player. One of the most prominent filmmakers in Hollywood. He is known for providing romantic comedies with parodies and
+                        slapstick comedies. The themes of his films are deeply rooted in literature, gender, philosophy, psychology, Jewish identity and film history. Most of his work is the setting for most of his work and his main theme is New York
+                        City, and he is also a jazz piper who performs regularly in a small Manhattan auditorium. His most famous films: Annie Hall (1977) and Manhattan (1979), both with actress Diane Keaton. Woody won an Oscar four times out of 24 nominations
+                        in three fields: directing, writing and acting. </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p> Oscar - (1995,1990,1987,1985) best director : nominee - (1978) best director : won - (2014,2012,2006,1999,1996) best writing : won - (2012,1987) best writing : won , Golden Globe - (1986,2012) best screenplay : won - (2006,1987,1979)
+                        best screenplay & best director : nominee </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>His best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/manhattan.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/annie hall.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/crimes and misdemeanors.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div>
+                        <a class="s_link1" href="https://www.imdb.com/title/tt0079522/?ref_=nm_knf_t1" target="_blank">manhattan </a>
+                        <a class="s_link2" href="https://www.imdb.com/title/tt0075686/?ref_=nm_knf_t2" target="_blank"> annie hall</a>
+                        <a class="s_link3" href="https://www.imdb.com/title/tt0097123/?ref_=nm_knf_t3" target="_blank">crimes and misdemeanors</a>
+                    </div>
+
+                </section>
+            </div>
+        </article>
+
+        <!-- End  Woody Allen-->
+
+
+        <!-- Start Steven Spielberg-->
+        <article class="about-me">
+            <div class="container">
+                <div class="image fl-left">
+                    <h2>Steven Spielberg</h2>
+                    <img height="700px" width="770px" src="image/Steven Spielberg.jpg" alt="Test">
+                </div>
+                <section class="info fl-left">
+                    <h2>About his Life</h2>
+                    <p>
+                        Steven Allan Spielberg ( born December 18, 1946) is an American film director, producer, and screenwriter. He is considered one of the founding pioneers of the New Hollywood era and one of the most popular directors and producers in film history. Spielberg
+                        started in Hollywood directing television and several minor theatrical releases. He became a household name as the director of Jaws (1975), which was critically and commercially successful and is considered the first summer blockbuster.[3]
+                        His subsequent releases focused typically on science fiction/adventure films such as Close Encounters of the Third Kind (1977), Raiders of the Lost Ark (1981) and its later sequels as part of the Indiana Jones franchise, E.T. the
+                        Extra-Terrestrial (1982) and Jurassic Park (1993), which became archetypes of modern Hollywood escapist filmmaking.
+                    </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p> Oscar - (2013,2006,1983,1982,1972) best director :nominee - (1994,1999) best director : won - (2018,2016,2007,1986) best motion picture : nominee , Golden Globe - (2018,2013,2002,1986,1983,1978) best director : nominee - (2008,1999,1994)
+                        best director : won , Emmy Awards -(2010,2003,2002) for outstanding miniseries : won </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>His best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/schindler list.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/e t.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/saving private ryan.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div>
+                        <a class="p_link1" href="https://www.imdb.com/title/tt0108052/?ref_=nm_knf_t1" target="_blank">Schindler's List </a>
+                        <a class="p_link2" href="https://www.imdb.com/title/tt0083866/?ref_=nm_knf_t2" target="_blank"> E.T.</a>
+                        <a class="p_link3" href="https://www.imdb.com/title/tt0120815/?ref_=nm_knf_t3" target="_blank">Saving Private Ryan</a>
+                    </div>
+
+                </section>
+            </div>
+        </article>
+
+        <!-- End  Steven Spielberg-->
+
+
+
+        <!-- Start Francis Ford-->
+        <article class="about-me">
+            <div class="container">
+                <div class="image fl-left">
+                    <h2>Francis Ford</h2>
+                    <img height="700px" width="770px" src="image/Francis Ford.jpg" alt="Test">
+                </div>
+                <section class="info fl-left">
+                    <h2>About his Life</h2>
+                    <p> Francis Ford Coppola (born April 7, 1939) is an American filmmaker. He was a central figure in the New Hollywood filmmaking movement of the 1960s and 1970s, and is widely considered to be one of the greatest filmmakers of all time.
+                        After directing The Rain People in 1969, Coppola co-wrote Patton (1970), earning the Academy Award for Best Original Screenplay along with Edmund H. North. Coppola's reputation as a filmmaker was cemented with the release of The
+                        Godfather (1972). The film revolutionized movie-making in the gangster genre, and was adored by the public and critics alike. The Godfather won three Academy Awards: Best Picture, Best Actor, and Best Adapted Screenplay (shared
+                        with Mario Puzo).
+                    </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p> Oscar - (1991,1980) best director & best writing : nominee - (1971,1973,1975) best writing :won , Golden Globe - (1991,1975) best director & best screenplay : nominee - (1980) best original score : won - (1973) best director & best
+                        screenplay : won , Emmy Award - (1997,1998) for outstanding miniseries : nominee </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>His best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/the godfather.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/the godfather2.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/the conversatian.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div>
+                        <a class="l_link1" href="https://www.imdb.com/title/tt0068646/?ref_=nm_knf_t4" target="_blank">The Godfather </a>
+                        <a class="s_link2" href="https://www.imdb.com/title/tt0071562/?ref_=nm_knf_t3" target="_blank"> The Godfather 2</a>
+                        <a class="s_link3" href="https://www.imdb.com/title/tt0071360/?ref_=nm_knf_t2" target="_blank">The Conversatian</a>
+                    </div>
+
+                </section>
+            </div>
+        </article>
+
+        <!-- End  Francis Ford-->
+
+
+
+        <!-- Start Contat me -->
+        <article class="contact">
+            <div class="container">
+                <div class="info fl-left">
+                    <h2>Contact Me</h2>
+                    <strong>Team Members :-</strong>
+                    <ul>
+                        <li>Eslam Shaban Abdallah</li>
+                        <li>Al hassan Ibrahim gad elrab</li>
+                        <li>Islam Mohamed Gamal</li>
+                        <li>El Hassan El Seid </li>
+                        <li>Ahmed Ashraf</li>
+                        <li> Walled Shaban</li>
+                    </ul>
+
+                    <p>
+                        Fcis Ain Shams University<br> Cairo
+                        <br> Egypt
+                    </p>
+                    <p>
+                        <strong>Email:</strong>team99@cis.asu.edu.eg<br>
+                        <strong>Phone:</strong>010123456789
+                    </p>
+                </div>
+
+                <form class="form fl-left" name="inputForm" onsubmit="return validateForm();">
+                    <label>Name *</label>
+                    <input name="name" type="text" id="contact">
+
+                    <label>Email Address *</label>
+                    <input name="email" type="text">
+
+                    <label>Phone *</label>
+                    <input name="phone" type="number">
+
+                    <label>Message</label>
+                    <textarea name="message"></textarea>
+
+                    <input class="my-button" type="submit" value="Contact Me">
+                </form>
+            </div>
+        </article>
+        <!-- Start Contat me -->
+
+
+        <!-- Start footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>Copyright &copy; 2020 Team99</p>
+                <span>Created by :- &nbsp Alhassan Ibrahim Gad elrab</span>
+                <ul>
+                    <li><img src="image/facebook.png"></li>
+                    <li><img src="image/google-plus.png"></li>
+                    <li><img src="image/twitter.png"></li>
+                    <li><img src="image/linkedin.png"></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- End footer -->
+    </section>
+    <!--&&&&&&&&&&&&&&&&&&&&     Actress page    &&&&&&&&&&&&7&&&&-->
+    <section name="Actress" class="Actress" id="Actress">
+        <!-- Start Header -->
+
+        <header class="header">
+            <section class="slider2">
+                <div class="container">
+                    <div class="intro">
+                        <h2>Cinema Hub</h2>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="navbar">
+                <div class="container">
+                    <h2 class="fl-left">Cinema <span>Hub</span></h2>
+                    <ul>
+                        <li onclick="cinema1()"><a href="#home">Home</a></li>
+                        <li onclick="cinema7()"><a href="#Actors">Actors</a></li>
+                        <li class="active" onclick="cinema6()"><a href="#">Actresses</a></li>
+                        <li onclick="cinema5()"><a href="#Dirctors">Directors</a></li>
+                        <li onclick="cinema4()"><a href="#about">About us</a></li>
+                        <li><a href="#contact">Contact me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- End Header -->
+
+
+
+        <!-- Alexandra Daddario-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Alexandra Daddario</h2>
+                    <img src="image/alexandra-daddario.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About her Life</h2>
+                    <p>Daddariowas born in New York City, the eldest child of Christina, , and Richard Daddario,Her younger brother, Matthew Daddario, is also an actor, and she has a younger sister,also Daddario said she decided to be an actress at the age
+                        of eleven."I always loved storytelling," she stated in 2019. "It was just something I genuinely wanted to do—and I could've done anything, really. "She attended Marymount Manhattan College before dropping out to pursue acting full-time.She
+                        has studied the Meisner acting technique for years.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p>Alexandra Anna Daddario (born March 16, 1986) is an American actress. She is known for playing Annabeth Chase in the Percy Jackson film series, Blake Gaines in San Andreas (2015), Summer Quinn in Baywatch (2017), Emma Corrigan in Can
+                        You Keep a Secret?, and Alexis Butler in We Summon the Darkness (both 2019). She has also starred in the films Texas Chainsaw 3D and Hall Pass and has guest starred in television series such as White Collar, It's Always Sunny in
+                        Philadelphia, True Detective, New Girl, and American Horror Story: Hotel. </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Her best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/Texas Chainsaw.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/Bay Watch.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/San Andreas.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="linkes">
+                        <a class="h_link1" href="https://www.imdb.com/title/tt1572315/?ref_=nm_knf_t2"> Texas Chainsaw </a>
+                        <a class="h_link2" href="https://www.imdb.com/title/tt1469304/?ref_=nm_knf_t1">Bay Watch</a>
+                        <a class="h_link3" href="https://www.imdb.com/title/tt2126355/?ref_=nm_flmg_act_29">San Andreas</a>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+        <!-- Alexandra Daddario-->
+
+
+        <!-- Sart Karen Gillan-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2> Karen Gillan</h2>
+                    <img src="image/Karen-Gillan.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About her Life</h2>
+                    <p>Karen Sheila Gillan was born in Inverness on 28 November 1987,the daughter of Marie and Raymond Gillan. When she turned 16, she moved to Edinburgh and completed a HNC Acting and Performance course at Telford College. She moved to London
+                        at age 18 to study at the Italia Conti Academy of Theatre Arts.While there, she was scouted by a modelling agency.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p>Karen Sheila Gillan is a Scottish actress and filmmaker. She first began acting with guest roles on television, before receiving recognition for portraying Amy Pond, a primary companion to the Eleventh Doctor, in the BBC One series
+                        Doctor Who (2010–2013), for which she received critical acclaim, and she received several awards and nominations, including winning a National Television Award. Gillan's early film roles include the horror film Outcast (2010) and
+                        She relocated to the U.S. in 2013, and starred in the film Oculus (2013), and played the lead in the ABC/Hulu series Selfie (2014). She then received widespread recognition for portraying Nebula in the Marvel Cinematic Universe
+                        films (2014–present), and for portraying Ruby Roundhouse in the Jumanji film series (2017–present). She wrote, directed, and starred in the drama film The Party's Just Beginning (2018), for which she won an award at the Philadelphia
+                        Film Festival.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Her best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/Guardians of Galaxy.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/Avengers-Endgame.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/Jumanji-The Next Level.jpg" alt="Test" width=200px height=190px>
+                    </div>
+
+                    <div class="linkes">
+                        <a class="j_link1" href="https://www.imdb.com/title/tt2015381/?ref_=nm_knf_t2">Guardians of Galaxy</a>
+                        <a class="j_link2" href="https://www.imdb.com/title/tt4154796/?ref_=nm_knf_t4">Avengers-Endgame</a>
+                        <a class="j_link3" href="https://www.imdb.com/title/tt7975244/?ref_=nm_flmg_act_8">Jumanji:The Next Level</a>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+        <!-- End Karen Gillan-->
+
+
+        <!-- Sart Scarlett Johansson -->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Scarlett Johansson</h2>
+                    <img src="image/Scarlett Johansson.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About her Life</h2>
+                    <p> Scarlett Ingrid Johansson was born in the New York City borough of Manhattan, on November 22, 1984.Her father, Karsten Olaf Johansson, Scarlett's mother, Melanie Sloan, a New Yorker, has worked as a producer. She comes from an Ashkenazi
+                        Jewish family from Poland and Russia,and Scarlett has described herself as Jewish.She has an older sister, Vanessa, also an actress; an older brother, Adrian; and a twin brother, Hunter. Johansson also has an older half-brother,
+                        Christian, from her father's first marriage. She holds both American and Danish citizenship.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p> Her films have grossed over $14.3 billion worldwide, making Johansson the ninth-highest-grossing box office star of all time. She is the recipient of several accolades, including a Tony Award and a BAFTA Award, as well as nominations
+                        for two Academy Awards and five Golden Globe Awards. and first appeared on stage in an Off-Broadway play as a child actor. She made her film debut in the fantasy comedy North (1994), and gained early recognition for her roles in
+                        Manny & Lo (1996), The Horse Whisperer (1998), and Ghost World (2001). Johansson shifted to adult roles in 2003 with her performances in Lost in Translation, which won her a BAFTA Award for Best Actress, and Girl with a Pearl Earring.
+                        She was nominated for Golden Globe Awards for these films.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Her best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/The Avengers.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/Black-Widow.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/Lucy1.jpg" alt="Test" width=200px height=190px>
+                    </div>
+
+                    <div class="linkes">
+                        <a class="i_link1" href="https://www.imdb.com/title/tt0848228/?ref_=nm_knf_t3">The Avengers </a>
+                        <a class="i_link2" href="https://www.imdb.com/title/tt3480822/?ref_=nm_flmg_act_3">Black-Widow</a>
+                        <a class="i_link3" href="https://www.imdb.com/title/tt2872732/?ref_=nm_flmg_act_20">Lucy</a>
+                    </div>
+
+                </section>
+
+            </div>
+        </article>
+        <!-- End Scarlett Johansson-->
+
+
+        <!-- Sart Kristen Stewort-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Kristen Stewort</h2>
+                    <img src="image/Kristen Stewart.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About her Life</h2>
+                    <p>Stewart was born in Los Angeles, California, on April 9, 1990. Both of her parents work in the entertainment industry.Her American father, John Stewart, is a stage manager and television producer. Her Australian mother, Jules Mann-Stewart,
+                        is originally from Maroochydore, Queensland. She is a script supervisor. Stewart has an older brother, Cameron B. Stewart, and two adopted brothers, Dana and Taylor.Stewart attended local schools until the seventh grade. As she
+                        became more involved in acting, she continued her education by distance until completing high school.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p>The world's highest-paid actress in 2010 and 2012, she is the recipient of several accolades, including a BAFTA Award and a César Award, which she was the first American actress to win. Stewart first gained notice at age 12 for her
+                        role as the daughter of Jodie Foster's character in David Fincher's thriller Panic Room (2002), which earned her a Young Artist Award nomination for Best Leading Actress in a Feature Film. She subsequently starred in Speak (2004),
+                        Catch That Kid (2004), Zathura: A Space Adventure (2005), and Into the Wild (2007). In 2010, she was awarded the BAFTA Rising Star Award. Stewart went on to gain worldwide recognition for her role as Bella Swan in The Twilight
+                        Saga film series (2008–2012), which collectively grossed over $3.3 billion worldwide. </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Her best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/The Twilight Saga-New Moon.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/Lizzie.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/Snow White and the Hunts Man.jpg" alt="Test" width=200px height=190px>
+                    </div>
+
+                    <div class="linkes">
+                        <a class="k_link1" href="https://www.imdb.com/title/tt1259571/?ref_=nm_knf_t4">The Twilight Saga:New Moon</a>
+                        <a class="k_link2" href="https://www.imdb.com/title/tt5160938/?ref_=nm_flmg_act_9">Lizzie</a>
+                        <a class="k_link3" href="https://www.imdb.com/title/tt1735898/?ref_=nm_knf_t1">Snow White and the Hunts Man</a>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+        <!-- End Kristen Stewort-->
+
+
+        <!-- Sart Angelina Jolie-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Angelina Jolie</h2>
+                    <img src="image/Angelina Jolie.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About her Life</h2>
+                    <p> Born Angelina Jolie Voight in Los Angeles, California, she is the daughter of actors Jon Voight and Marcheline Bertrand. She is the sister of actor James Haven and the niece of singer-songwriter Chip Taylorand geologist and volcanologist
+                        Barry Voight.Her godparents are actors Jacqueline Bisset and Maximilian Schell. On her father's side, Jolie is of German and Slovak descent, and on her mother's side, she is of primarily French Canadian, Dutch, and German ancestry.Like
+                        her mother, Jolie has stated that she is part Iroquois,although her only known indigenous ancestors were 17th-century Hurons.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p>Angelina Jolie is an American actress, filmmaker, and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.,
+                        and won an Academy Award for Best Supporting Actress for her performance in the drama Girl, Interrupted (1999). Her starring role as the video game heroine Lara Croft in Lara Croft: Tomb Raider (2001) established her as a leading
+                        Hollywood actress, which earned her a nomination for an Academy Award for Best Actress. Her biggest commercial success came with the fantasy picture Maleficent (2014).</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Her best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/Maleficent.jpg" alt="Test" width=200px height=180px>
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/Wanted.jpg" alt="Test" width=200px height=180px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/Changeling.jpg" alt="Test" width=200px height=180px>
+                    </div>
+
+                    <div class="linkes">
+                        <a class="l_link1" href="https://www.imdb.com/title/tt1587310/?ref_=nm_knf_t1">Maleficent</a>
+                        <a class="l_link2" href="https://www.imdb.com/title/tt0493464/?ref_=nm_knf_t4">Wanted</a>
+                        <a class="l_link3" href="https://www.imdb.com/title/tt0824747/?ref_=nm_knf_t3">Changeling</a>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+        <!-- End Angelina Jolie-->
+
+
+        <!-- Start Amy Adams-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Amy Adams</h2>
+                    <img height="600px" width="770px" src="image/Amy Adams.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About her Life</h2>
+                    <p>Amy Lou Adams was born on August 20, 1974, to American parents Richard and Kathryn Adams, when her father was stationed with the United States Army .She is the middle of seven children, with four brothers and two sisters. After leaving
+                        the army, her father sang professionally in nightclubs and restaurants. The family was poor; they camped and hiked together, and performed amateur skits usually written by her father and sometimes by her mother. Adams was enthusiastic
+                        about the plays and always played the lead.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p>Amy Lou Adams is an American actress. Known for both her comedic and dramatic performances, she has placed three times in annual rankings of the highest-paid actresses in the world. Her accolades include two Golden Globes, and nominations
+                        for six Academy Awards and seven British Academy Film Awards. she found musical theater a better fit, and from 1994 to 1998, she worked in dinner theater. She made her feature film debut with a supporting part in the 1999 satire
+                        Drop Dead Gorgeous.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Her best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/Arrival.jpg" alt="Test" width=210px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/Enchanted.jpg" alt="Test" width=210px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/American Hustle.jpg" alt="Test" width=210px height=190px>
+                    </div>
+
+                    <div class="linkes">
+                        <a class="m_link1" href="https://www.imdb.com/title/tt2543164/?ref_=nm_knf_t1">Arrival </a>
+                        <a class="m_link2" href="https://www.imdb.com/title/tt0461770/?ref_=nm_knf_t2">Enchanted</a>
+                        <a class="m_link3" href="https://www.imdb.com/title/tt1800241/?ref_=nm_knf_t3">American Hustle</a>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+        <!-- End Tom Hanks-->
+
+
+        <!-- Start Natalie-Portman-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Natalie Portman</h2>
+                    <img height="700px" width="770px" src="image/Natalie-Portman.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About her Life</h2>
+                    <p>
+                        Portman was born on June 9, 1981, in Jerusalem to Jewish parents. She was given the Hebrew name Neta-Lee. She is the only child of Shelley (née Stevens), an American homemaker who works as Portman's agent, and Avner Hershlag, an Israeli gynecologist.Her
+                        maternal grandparents were American Jews and her paternal grandparents were Jewish immigrants to Israel.
+                    </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p> Natalie Portman is an actress and filmmaker with dual Israeli and American citizenship. Prolific in film since a teenager, she has starred in blockbusters and also played psychologically troubled women in independent films, for which
+                        she has received various accolades, including an Academy Award and two Golden Globe Awards. . From 1999 to 2003, Portman attended Harvard University for a bachelor's degree in psychology, while continuing to act in the Star Wars
+                        prequel trilogy (2002, 2005) and in The Public Theater's 2001 revival of Anton Chekhov's play The Seagull. In 2004, Portman was nominated for an Academy Award for Best Supporting Actress and won a Golden Globe Award for playing
+                        a mysterious stripper in the romantic drama Closer.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Her best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/Black Swan.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/Thor.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/Annihilation.jpg" alt="Test" width=200px height=190px>
+                    </div>
+
+                    <div class="linkes">
+                        <a class="n_link1" href="https://www.imdb.com/title/tt0947798/?ref_=nm_knf_t1">Black Swan</a>
+                        <a class="n_link2" href="https://www.imdb.com/title/tt0800369/?ref_=nm_flmg_act_28">Thor</a>
+                        <a class="n_link3" href="https://www.imdb.com/title/tt2798920/?ref_=nm_flmg_act_8">Annihilation</a>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+
+        <!-- End Natalie-Portman-->
+
+
+
+
+
+        <!-- Start Contat me -->
+        <article class="contact">
+            <div class="container">
+                <section class="info fl-left">
+                    <h2>Contact Me</h2>
+                    <strong>Team Members :-</strong>
+                    <ul>
+                        <li>Eslam Shaban Abdallah</li>
+                        <li>Al hassan Ibrahim gad elrab</li>
+                        <li>Islam Mohamed Gamal</li>
+                        <li>El Hassan El Seid </li>
+                        <li>Ahmed Ashraf</li>
+                        <li> Walled Shaban</li>
+                    </ul>
+
+                    <p>
+                        Fcis Ain Shams University<br> Cairo
+                        <br> Egypt
+                    </p>
+                    <p>
+                        <strong>Email:</strong>team99@cis.asu.edu.eg<br>
+                        <strong>Phone:</strong>010123456789
+                    </p>
+                </section>
+
+                <form class="form fl-left" name="inputForm" onsubmit="return validateForm();">
+                    <label>Name *</label>
+                    <input name="name" type="text" id="contact">
+
+                    <label>Email Address *</label>
+                    <input name="email" type="text">
+
+                    <label>Phone *</label>
+                    <input name="phone" type="number">
+
+                    <label>Message</label>
+                    <textarea name="message"></textarea>
+
+                    <input class="my-button" type="submit" value="Contact Me">
+                </form>
+            </div>
+        </article>
+        <!-- Start Contat me -->
+
+
+        <!-- Start footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>Copyright &copy; 2020 Team99</p>
+                <span>Created by :- &nbsp Eslam Shaban</span>
+
+
+                <ul>
+                    <li><img src="image/facebook.png"></li>
+                    <li><img src="image/google-plus.png"></li>
+                    <li><img src="image/twitter.png"></li>
+                    <li><img src="image/linkedin.png"></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- End footer -->
+    </section>
+
+    <!--&&&&&&&&&&&&&&&&&&&&     Actors page    &&&&&&&&&&&&7&&&&-->
+
+    <section name="Actors" class="Actors" id="Actors">
+
+        <!-- Start Header -->
+
+        <header class="header">
+            <section class="slider1">
+                <div class="container">
+                    <div class="intro">
+                        <h2>Cinema Hub</h2>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="navbar">
+                <div class="container">
+                    <h2 class="fl-left">Cinema <span>Hub</span></h2>
+                    <ul>
+                        <li onclick="cinema1()"><a href="#home">Home</a></li>
+                        <li class="active" onclick="cinema7()"><a href="#">Actors</a></li>
+                        <li onclick="cinema6()"><a href="#Actress">Actresses</a></li>
+                        <li onclick="cinema5()"><a href="#Dirctors">Directors</a></li>
+                        <li onclick="cinema4()"><a href="#about">About us</a></li>
+                        <li><a href="#contact">Contact me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- End Header -->
+
+
+
+        <!-- Sart Brad-Pitt-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Brad-Pitt</h2>
+                    <img src="image/brad-Pitt2.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About his Life</h2>
+                    <p> Pitt (born December 18, 1963) , was born in Shawnee, Oklahoma, to William Alvin Pitt,is an American actor and film producer, the proprietor of a trucking company, and Jane Etta (née Hillhouse), a school counselor. Pitt enrolled in
+                        the University of Missouri in 1982, majoring in journalism with a focus on advertising. As graduation approached, Pitt did not feel ready to settle down. He loved films—"a portal into different worlds for me"—and, since films were
+                        not made in Missouri, he decided to go to where they were made. Two weeks short of completing the coursework for a degree, Pitt left the university and moved to Los Angeles, where he took acting lessons and worked odd jobs. He
+                        has named his early acting heroes as Gary Oldman, Sean Penn and Mickey Rourke.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p>He has received multiple awards, including two Golden Globe Awards and an Academy Award for his acting, the latter earning him a Golden Globe Award for Best Supporting Actor and an Academy Award nomination. , and Once Upon a Time in
+                        Hollywood (2019), for which he won a second Golden Globe Award and the Academy Award for Best Supporting Actor. </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>His best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/ad astra.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/Fury.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/World War Z.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="linkes">
+                        <a class="d_link1" href="https://www.imdb.com/title/tt2935510/?ref_=nm_knf_i1"> Ad astra </a>
+                        <a class="d_link2" href="https://www.imdb.com/title/tt2713180/?ref_=nm_flmg_prd_33">Fury</a>
+                        <a class="d_link3" href="https://www.imdb.com/title/tt0816711/?ref_=nm_flmg_prd_40 "> World War Z</a>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+        <!-- End Brad-Pitt-->
+
+
+        <!-- Sart Tom Cruise-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Tom Cruise</h2>
+                    <img src="image/tom-cruise.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About his Life</h2>
+                    <p> Cruise was born Thomas Cruise Mapother IV in Syracuse, New York, on July 3, 1962,the son of special education teacher Mary Lee (née Pfeiffer; 1936–2017) and electrical engineer Thomas Cruise Mapother III (1934–1984).Cruise grew up
+                        in near poverty and had a Catholic upbringing.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p>He has received various accolades for his work, including three Golden Globe Awards and three nominations for Academy Awards. , he won a Golden Globe Award and received a nomination for the Academy Award for Best Actor. As a leading
+                        Hollywood star in the 1990s, he starred in several commercially successful films, including the drama,, he won a Golden Globe Award for Best Actor and received his second Academy Award nomination.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>His best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/Mission Impossible.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/The Last Samurai.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/The Mummy.jpg" alt="Test" width=200px height=190px>
+                    </div>
+
+                    <div class="linkes">
+                        <a class="e_link1" href="https://www.imdb.com/title/tt0317919/?ref_=nm_flmg_act_21">Mission:Impossible III</a>
+                        <a class="e_link2" href="https://www.imdb.com/title/tt0325710/?ref_=nm_knf_t2">The Last Samurai</a>
+                        <a class="e_link3" href="https://www.imdb.com/title/tt2345759/?ref_=nm_flmg_act_9">The Mummy</a>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+        <!-- End Tom Cruise-->
+
+
+        <!-- Sart Jason Statham-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Jason Statham</h2>
+                    <img src="image/jason.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About his Life</h2>
+                    <p> Jason Statham was born on 26 July 1967 in Shirebrook, Derbyshire,the son of Eileen (née Yates), a dancer, and Barry Statham, a street seller.He moved to Great Yarmouth, Norfolk, where he initially chose not to follow his father's career
+                        working the local market stalls, instead practising martial arts. a passion that he shared with diving.He practiced daily in perfecting his diving techniques, and was a member of Britain's National Swimming Squad for twelve years.Statham
+                        competed for England at the 1990 Commonwealth Games in the 10 meter, 3 meter, and 1 meter competitions.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p> Statham's past professional history working in market stalls inspired his casting in the Guy Ritchie crime films Lock, Stock and Two Smoking Barrels (1998) and Snatch (2000). The commercial success of these films led him to star as
+                        Frank Martin in the Transporter trilogy (2002–08). After starring in a variety of heist and action thriller films such as The Italian Job (2003), Crank (2006),he established himself as a leading actor in Hollywood. He found further
+                        commercial success in the action series The Expendables (2010–14) and the Fast & Furious franchise. In the latter, he has played his character, Deckard Shaw, in Fast & Furious 6 (2013), Furious 7 (2015), The Fate of the Furious
+                        (2017) and in the spin-off Fast & Furious Presents: Hobbs & Shaw (2019).</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>His best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/The Meg.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/Fast & Furious 7.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/Crank.jpg" alt="Test" width=200px height=190px>
+                    </div>
+
+                    <div class="linkes">
+                        <a class="f_link1" href="https://www.imdb.com/title/tt4779682/?ref_=nm_knf_t4">The Meg </a>
+                        <a class="f_link2" href="https://www.imdb.com/title/tt2820852/?ref_=nm_knf_t2">Fast & Furious 7</a>
+                        <a class="f_link3" href="https://www.imdb.com/title/tt0479884/?ref_=nm_knf_t1">Crank</a>
+                    </div>
+
+                </section>
+
+            </div>
+        </article>
+        <!-- End Jason Statham-->
+
+
+        <!-- Sart Sylvester Stallone-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Sylvester Stallone</h2>
+                    <img src="image/sylvester.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About his Life</h2>
+                    <p>Michael Sylvester Gardenzio Stallone was born in the Hell's Kitchen neighborhood of Manhattan, New York, on July 6, 1946, the elder son of Francesco "Frank" Stallone moved to the U.S. in the 1930s, while his American mother is of French
+                        (from Brittany) and Ukrainian-Jewish (from Odessa) descent His younger brother is actor and musician Frank Stallone. Stallone attended Notre Dame Academy and Lincoln High School in Philadelphia,as well as Charlotte Hall Military
+                        Academy, prior to attending Miami Dade College and the University of Miami.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p>Stallone mostly only found gradual work as an extra or side character in films with a sizeable budget until he achieved his greatest critical and commercial success as an actor, starting in 1976 with his self-created role as the boxer
+                        Rocky Balboa, in the first film of the successful Rocky series (1976–2018). In the films, and his first Golden Globe award for the first Creed, as well as a third Oscar nomination, having been first nominated for the same role
+                        40 years prior. In 1977, Stallone was nominated for two Academy Awards for Rocky, for Best Original Screenplay and Best Actor. </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>His best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/Expendables2.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/Rocky IV.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/Rambo.jpg" alt="Test" width=200px height=190px>
+                    </div>
+
+                    <div class="linkes">
+                        <a class="g_link1" href="https://www.imdb.com/title/tt1764651/?ref_=nm_flmg_act_20">Expendables2 </a>
+                        <a class="g_link2" href="https://www.imdb.com/title/tt0089927/?ref_=nm_knf_t2">Rocky IV</a>
+                        <a class="g_link3" href="https://www.imdb.com/title/tt0462499/?ref_=nm_flmg_act_24"> Rambo</a>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+        <!-- End Sylvester Stallone-->
+
+
+        <!-- Sart Leonardo Dicaprio-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Leonardo DiCaprio</h2>
+                    <img src="image/leonardo2.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About his Life</h2>
+                    <p> Leonardo Wilhelm DiCaprio was born on November 11, 1974, in Los Angeles, California, the only child of Irmelin (née Indenbirken), a legal secretary, and George DiCaprio, an underground comix writer, publisher, and distributor of comic
+                        books. DiCaprio's father is of Italian and German descent, and the actor is conversant in Italian. DiCaprio's maternal grandfather, Wilhelm Indenbirken, was German, and his maternal grandmother, Helene Indenbirken, was a Russian-born
+                        German citizen. In an interview in Russia, DiCaprio referred to himself as "half-Russian" and said that two of his late grandparents were Russian. DiCaprio's parents met while attending college and moved to Los Angeles after graduating.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p>He won the award winner award winner prize winner one award winner in the 2016 film The Return. Award Best Actor Award Best Actor Award in 2004 The Wolf of Wall Award Best Actor Award in The Wolf of Wall 2013, and the 2015 Actor Award
+                        Prize. 2015 Award Prize Award.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>His best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/movie1.jpg" alt="Test" width=200px height=180px>
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/titanic.jpg" alt="Test" width=200px height=180px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/The Revenant.jpg" alt="Test" width=200px height=180px>
+                    </div>
+
+                    <div class="linkes">
+                        <a class="a_link1" href="https://www.imdb.com/title/tt0993846/?ref_=nm_knf_i4"> The Wolf of Wall Street </a>
+                        <a class="a_link2" href="https://www.imdb.com/title/tt0120338/?ref_=nm_knf_i3"> Titanic</a>
+                        <a class="a_link3" href="https://www.imdb.com/title/tt1663202/?ref_=nm_flmg_act_9">The Revenant</a>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+        <!-- End Leonardo Dicaprio-->
+
+
+        <!-- Start Tom Hanks-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Tom Hanks</h2>
+                    <img height="600px" width="770px" src="image/tom hanks2.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About his Life</h2>
+                    <p>Thomas Jeffrey Hanks (born July 9, 1956) is an American actor and filmmaker. Known for both his comedic and dramatic roles, Hanks is one of the most popular and recognizable film stars worldwide, and is regarded as an American cultural
+                        icon. Hanks's films have grossed more than $4.9 billion in North America and more than $9.96 billion worldwide,making him the fifth-highest-grossing actor in North America.</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p>Over Hanks's illustrious career as an actor and producer, he has received many award nominations. Hanks has received six Academy Award nominations including two consecutive wins for Best Actor for Philadelphia, and Forrest Gump in
+                        1993, and 1994 respectively. Hanks also received a Tony Award nomination for Best Actor in a Play for his performance in Nora Ephron's play Lucky Guy in 2013. Hanks has also received 12 Primetime Emmy Award nominations for his
+                        work on television which includes 7 wins for his work as a producer on various limited series and television films including From the Earth to the Moon (1998), Band of Brothers (2002), John Adams (2008), The Pacific (2010), Game
+                        Change (2012), and Olive Kitteridge (2015).</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>His best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/cast away.jpg" alt="Test" width=210px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/big.jpg" alt="Test" width=210px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/forrest gump.jpg" alt="Test" width=210px height=190px>
+                    </div>
+
+                    <div class="linkes">
+                        <a class="b_link1" href="https://www.imdb.com/title/tt0162222/?ref_=nm_knf_i1"> Cast Away </a>
+                        <a class="b_link2" href="https://www.imdb.com/title/tt0094737/?ref_=nm_knf_i2"> big</a>
+                        <a class="b_link3" href="https://www.imdb.com/title/tt0109830/?ref_=nm_knf_i3"> Forrest Gump</a>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+        <!-- End Tom Hanks-->
+
+
+        <!-- Start Robert de niro-->
+        <article class="about-me">
+            <div class="container">
+                <section class="image fl-left">
+                    <h2>Robert de niro</h2>
+                    <img height="700px" width="770px" src="image/robert-de-niro2.jpg" alt="Test">
+                </section>
+
+                <section class="info fl-left">
+                    <h2>About his Life</h2>
+                    <p>
+                        Robert Anthony De Niro Jr. (/də ˈnɪəroʊ/, Italian: [de ˈniːro]; born August 17, 1943) is an American actor, producer, and director who holds both American and Italian citizenship. He is particularly known for his collaborations with filmmaker Martin Scorsese.
+                        He is the recipient of various accolades, including two Academy Awards, a Golden Globe Award, the Cecil B. DeMille Award, and a Screen Actors Guild Life Achievement Award. In 2009, he received the Kennedy Center Honor. In 2016,
+                        he received a Presidential Medal of Freedom from U.S. President Barack Obama. Born in Manhattan in New York City, De Niro studied acting at HB Studio, Stella Adler Conservatory, and Lee Strasberg's Actors Studio. His first major
+                        onscreen appearance was in Greetings (1968). He soon gained recognition with his role as a Major League Baseball player in the sports drama Bang the Drum Slowly (1973).
+                    </p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>Awards and Nominations</h2>
+                    <p> He won an Academy Award for Best Actor for his role in "Raging Bull", as well as an award for Best Supporting Actor in The Godfather Part Two. De Niro and Marlon Brando are the only actors to receive Academy Awards for playing the
+                        same character in films, with Brando playing the older character, Don Vito Corleone, in The Godfather, and De Niro playing the same younger character in the second part of the film. It has been nominated for an Oscar 6 times</p>
+                </section>
+
+                <section class="info fl-left">
+                    <h2>His best movies</h2>
+                    <div class="movies">
+                        <img class="img1" src="image/taxi driver.jpg" alt="Test" width=200px height="190px">
+                    </div>
+                    <div class="movies">
+                        <img class="img2" src="image/mean streets.jpg" alt="Test" width=200px height=190px>
+                    </div>
+                    <div class="movies">
+                        <img class="img3" src="image/cape fear.jpg" alt="Test" width=200px height=190px>
+                    </div>
+
+                    <div class="linkes">
+                        <a class="c_link1" href="https://www.imdb.com/title/tt0075314/?ref_=nm_knf_i4"> Taxi Driver </a>
+                        <a class="c_link2" href="https://www.imdb.com/title/tt0070379/?ref_=nm_knf_i3"> Mean Streets</a>
+                        <a class="c_link3" href="https://www.imdb.com/title/tt0101540/?ref_=nm_knf_i1 "> Cape Fear</a>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+
+        <!-- End Robert de niro-->
+
+
+
+
+
+        <!-- Start Contat me -->
+        <article class="contact">
+            <div class="container">
+                <section class="info fl-left">
+                    <h2>Contact Me</h2>
+                    <strong>Team Members :-</strong>
+                    <ul>
+                        <li>Eslam Shaban Abdallah</li>
+                        <li>Al hassan Ibrahim gad elrab</li>
+                        <li>Islam Mohamed Gamal</li>
+                        <li>El Hassan El Seid </li>
+                        <li>Ahmed Ashraf</li>
+                        <li> Walled Shaban</li>
+                    </ul>
+
+                    <p>
+                        Fcis Ain Shams University<br> Cairo
+                        <br> Egypt
+                    </p>
+                    <p>
+                        <strong>Email:</strong>team99@cis.asu.edu.eg<br>
+                        <strong>Phone:</strong>010123456789
+                    </p>
+                </section>
+
+                <form method="POST" autocomplete="on" class="form fl-left" name="inputForm" onsubmit="return validateForm();">
+                    <label>Name *</label>
+                    <input name="name" type="text" id="contact">
+
+                    <label>Email Address *</label>
+                    <input name="email" type="text">
+
+                    <label>Phone *</label>
+                    <input name="phone" type="number">
+
+                    <label>Message</label>
+                    <textarea name="message"></textarea>
+
+                    <input class="my-button" type="submit" value="Contact Me">
+                </form>
+            </div>
+        </article>
+        <!-- Start Contat me -->
+
+
+        <!-- Start footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>Copyright &copy; 2020 Team99</p>
+                <span>Created by :-
+                    <br>Eslam Shaban &nbsp &amp &nbsp Hassan Ibrahim</span>
+
+
+                <ul>
+                    <li><img src="image/facebook.png"></li>
+                    <li><img src="image/google-plus.png"></li>
+                    <li><img src="image/twitter.png"></li>
+                    <li><img src="image/linkedin.png"></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- End footer -->
+    </section>
+    <script type="text/javascript" src="js/log.js"></script>
+    <script type="text/javascript" src="js/contact-me.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
