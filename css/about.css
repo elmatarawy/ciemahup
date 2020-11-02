@@ -1,0 +1,106 @@
+body {
+    margin: 0px;
+    pad: 0px;
+}
+
+.about * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.about p {
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+}
+
+.about h2 {
+    padding: 6px;
+    background-color: #252F31;
+    color: #2CCA78;
+    display: block;
+    border-radius: 5px;
+}
+
+.about .description {
+    background-color: #252F31;
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.about .title {
+    color: white;
+    font-size: 36px;
+}
+
+.about .title span {
+    color: #24890D;
+}
+
+.about .main {
+    display: block;
+    width: 88%;
+    margin: auto;
+}
+
+.about .main h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+.about .pm {
+    color: #252F31;
+    background-color: #252F31;
+    color: white;
+    display: inline-block;
+    margin: 20px 40%;
+    width: 260px;
+    border-radius: 5px;
+}
+
+.about .top,
+.about .middle,
+.about .buttom {
+    display: flex;
+    width: 78%;
+    margin: auto;
+}
+
+.about .topleft,
+.about .midleft,
+.about .left,
+.about .topright,
+.about .midright,
+.about .right {
+    margin: 20px;
+    border: 2px solid #252F31;
+    background-color: #252F31;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.about .back {
+    display: inline-block;
+    padding: 10px;
+    background-color: #252F31;
+    text-align: center;
+    margin: 0 35%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.about .back a:hover {
+    background-color: #252F31;
+    color: #24890D;
+    font-size: 32px;
+}
+
+.about .back a {
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}

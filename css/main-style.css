@@ -1,0 +1,897 @@
+/* Start Main Rulze */
+
+.Actors .container,
+.Dirctors .container,
+.Actress .container {
+    width: 1170px;
+    margin: auto;
+}
+
+.Actors .clearfix,
+.Dirctors .clearfix,
+.Actress .clearfix {
+    clear: both;
+}
+
+
+/* End Main Rulze */
+
+
+/* Start Header*/
+
+.Actors .header .slider1,
+.Dirctors .header .slider1,
+.Actress .header .slider1,
+.Actors .slider3,
+.Dirctors .slider3,
+.Actress .slider3 {
+    background-image: url("../image/all.jpg");
+    -webkit-background-size: cover;
+    /* Css3 */
+    -o-background-size: cover;
+    /* Css3 */
+    background-size: cover;
+    /* Css3 */
+    background-color: #EEE;
+    height: 600px;
+}
+
+.Actors .header .slider2,
+.Dirctors .header .slider2,
+.Actress .header .slider2 {
+    background-image: url("../image/Actresses.jpg");
+    -webkit-background-size: cover;
+    /* Css3 */
+    -o-background-size: cover;
+    /* Css3 */
+    background-size: cover;
+    /* Css3 */
+    background-color: #EEE;
+    height: 600px;
+}
+
+.Actors .header .slider3 .intro,
+.Dirctors .header .slider3 .intro,
+.Actress .header .slider3 .intro,
+.Actors .header .slider2 .intro,
+.Dirctors .header .slider2 .intro,
+.Actress .header .slider2 .intro,
+.Actors .header .slider1 .intro,
+.Dirctors .header .slider1 .intro,
+.Actress .header .slider1 .intro {
+    padding-top: 100px;
+    text-align: center;
+    color: #FFF;
+}
+
+.Actors .header .slider3 .intro h2,
+.Actress .header .slider3 .intro h2,
+.Dirctors .header .slider3 .intro h2,
+.Actress .header .slider2 .intro h2,
+.Actors .header .slider2 .intro h2,
+.Dirctors .header .slider2 .intro h2,
+.Actors .header .slider1 .intro h2,
+.Actress .header .slider1 .intro h2,
+.Dirctors .header .slider1 .intro h2 {
+    margin: 0 auto;
+    font-size: 50px;
+    width: 600px;
+    border-top: 4px solid #FFF;
+    border-bottom: 4px solid #FFF;
+    padding: 5px 0;
+    color: #FFF;
+}
+
+.Actors .header .slider3 .intro button,
+.Dirctors .header .slider3 .intro button,
+.Actress .header .slider3 .intro button,
+.Actors .header .slider2 .intro button,
+.Dirctors .header .slider2 .intro button,
+.Actress .header .slider2 .intro button,
+.Actors .header .slider1 .intro button,
+.Dirctors .header .slider1 .intro button,
+.Actress .header .slider1 .intro button {
+    color: #EEE;
+    background: none;
+    margin-top: 30px;
+    font-size: 20px;
+    border: 2px solid #EEE;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.Actors .header .navbar h2,
+.Dirctors .header .navbar h2,
+.Actress .header .navbar h2 {
+    color: #FFF;
+}
+
+.Actors .header .navbar,
+.Dirctors .header .navbar,
+.Actress .header .navbar {
+    background-color: #252F31;
+    color: #FFF;
+    overflow: hidden;
+}
+
+.Actors .header .navbar h2 span,
+.Dirctors .header .navbar h2 span,
+.Actress .header .navbar h2 span {
+    color: #2ecc71;
+}
+
+.Actors .header .navbar ul,
+.Dirctors .header .navbar ul,
+.Actress .header .navbar ul {
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+    float: right;
+}
+
+.Actors .header .navbar ul li,
+.Dirctors .header .navbar ul li,
+.Actress .header .navbar ul li {
+    float: left;
+    padding: 10px;
+}
+
+.Actors .header .navbar ul li a,
+.Dirctors .header .navbar ul li a,
+.Actress .header .navbar ul li a {
+    color: #EEE;
+    text-decoration: none;
+}
+
+.Actors .header .navbar ul li.active a,
+.Dirctors .header .navbar ul li.active a,
+.Actress .header .navbar ul li.active a,
+.Actors .header .navbar ul li a:hover,
+.Dirctors .header .navbar ul li a:hover,
+.Actress .header .navbar ul li a:hover {
+    color: #30B576;
+}
+
+
+/* End Header */
+
+
+/*  About me */
+
+
+/*1st actor*/
+
+.Actors .about-me,
+.Dirctors .about-me,
+.Actress .about-me {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, .5);
+    overflow: hidden;
+    border: 2px solid #000;
+}
+
+.Actors .about-me .image,
+.Dirctors .about-me .image,
+.Actress .about-me .image {
+    width: 40%;
+}
+
+.Actors .about-me .image img,
+.Dirctors .about-me .image img,
+.Actress .about-me .image img {
+    width: 100%;
+    border: 3px solid #30B576;
+}
+
+.Actors .about-me .image h2,
+.Dirctors .about-me .image h2,
+.Actress .about-me .image h2 {
+    color: #EEE;
+    width: auto;
+    border: 3px solid #30B576;
+    margin: 5px auto;
+    border-radius: 3px;
+    background-color: #252F31;
+    text-align: center;
+}
+
+.Actors .about-me .info,
+.Dirctors .about-me .info,
+.Actress .about-me .info {
+    width: 60%;
+}
+
+.Actors .about-me .info h2,
+.Dirctors .about-me .info h2,
+.Actress .about-me .info h2 {
+    margin: 25px 0 20px 40px;
+}
+
+.Actors .about-me .info p,
+.Dirctors .about-me .info p,
+.Actress .about-me .info p {
+    margin: 0 0 10px 40px;
+}
+
+.Actors .about-me .info .movies .img1,
+.Dirctors .about-me .info .movies .img1,
+.Actress .about-me .info .movies .img1 {
+    float: left;
+    margin: 5px 5px 5px 40px;
+}
+
+.Actors .about-me .info .movies .img2,
+.Dirctors .about-me .info .movies .img2,
+.Actress .about-me .info .movies .img2 {
+    float: left;
+    margin: 5px;
+}
+
+.Actors .about-me .info .movies .img3,
+.Dirctors .about-me .info .movies .img3,
+.Actress .about-me .info .movies .img3 {
+    float: left;
+    margin: 5px;
+}
+
+
+/*1st actor --Leonardo Di caprio--- */
+
+.Actors .a_link1,
+.Dirctors .a_link1,
+.Actress .a_link1 {
+    margin: 75px;
+}
+
+.Actors .a_link2,
+.Dirctors .a_link2,
+.Actress .a_link2 {
+    margin: 30px;
+}
+
+.Actors .a_link3,
+.Dirctors .a_link3,
+.Actress .a_link3 {
+    margin: 90px;
+}
+
+
+/*1st actor --Leonardo Di caprio---*/
+
+
+/*2nd actor ---Tom Hanks---*/
+
+.Actors .b_link1,
+.Dirctors .b_link1,
+.Actress .b_link1 {
+    margin: 100px;
+}
+
+.Actors .b_link2,
+.Dirctors .b_link2,
+.Actress .b_link2 {
+    margin: 90px;
+}
+
+.Actors .b_link3,
+.Dirctors .b_link3,
+.Actress .b_link3 {
+    margin: 55px;
+}
+
+
+/* 2nd actor ---Tom Hanks---*/
+
+
+/*3rd actor ----Robert de niro-----*/
+
+.Actors .c_link1,
+.Dirctors .c_link1,
+.Actress .c_link1 {
+    margin: 100px;
+}
+
+.Actors .c_link2,
+.Dirctors .c_link2,
+.Actress .c_link2 {
+    margin: 60px;
+}
+
+.Actors .c_link3,
+.Dirctors .c_link3,
+.Actress .c_link3 {
+    margin: 70px;
+}
+
+
+/*3rd actor ----Robert de niro---*/
+
+
+/* 4 th actor -----Brsd pitt--- */
+
+.Actors .d_link1,
+.Dirctors .d_link1,
+.Actress .d_link1 {
+    margin: 100px;
+}
+
+.Actors .d_link2,
+.Dirctors .d_link2,
+.Actress .d_link2 {
+    margin: 60px;
+}
+
+.Actors .d_link3,
+.Dirctors .d_link3,
+.Actress .d_link3 {
+    margin: 100px;
+}
+
+
+/* 4 th actor -----Brsd pitt-- */
+
+
+/* 5 th actor--Tom Cruise---*/
+
+.Actors .e_link1,
+.Dirctors .e_link1,
+.Actress .e_link1 {
+    margin: 50px 30px 70px 70px;
+}
+
+.Actors .e_link2,
+.Dirctors .e_link2,
+.Actress .e_link2 {
+    margin: 60px 40px;
+}
+
+.Actors .e_link3,
+.Dirctors .e_link3,
+.Actress .e_link3 {
+    margin: 50px;
+}
+
+
+/*5 th actor--Tom Cruise--- */
+
+
+/* 6th actor --Jason Statham---*/
+
+.Actors .f_link1,
+.Dirctors .f_link1,
+.Actress .f_link1 {
+    margin: 80px;
+}
+
+.Actors .f_link2,
+.Dirctors .f_link2,
+.Actress .f_link2 {
+    margin: 80px 70px
+}
+
+.Actors .f_link3,
+.Dirctors .f_link3,
+.Actress .f_link3 {
+    margin: 80px 60px;
+}
+
+
+/* 6th actor --Jason Statham---* */
+
+
+/* 7th actor --Sylvester Stallone--*/
+
+.Actors .g_link1,
+.Dirctors .g_link1,
+.Actress .g_link1 {
+    margin: 80px;
+}
+
+.Actors .g_link2,
+.Dirctors .g_link2,
+.Actress .g_link2 {
+    margin: 60px 40px
+}
+
+.Actors .g_link3,
+.Dirctors .g_link3,
+.Actress .g_link3 {
+    margin: 100px;
+}
+
+
+/*7th actor --Sylvester Stallone--*/
+
+
+/*********************************************************Actress*****************************************/
+
+
+/* 1st actress--Alexandra daddario----*/
+
+.Actors .h_link1,
+.Dirctors .h_link1,
+.Actress .h_link1 {
+    margin: 80px;
+}
+
+.Actors .h_link2,
+.Dirctors .h_link2,
+.Actress .h_link2 {
+    margin: 50px;
+}
+
+.Actors .h_link3,
+.Dirctors .h_link3,
+.Actress .h_link3 {
+    margin: 80px;
+}
+
+
+/* 1st actress--Alexandra daddario----*/
+
+
+/* 2st actress--Karen Gillan----*/
+
+.Actors .j_link1,
+.Dirctors .j_link1,
+.Actress .j_link1 {
+    margin: 60px;
+}
+
+.Actors .j_link2,
+.Dirctors .j_link2,
+.Actress .j_link2 {
+    margin: 40px;
+}
+
+.Actors .j_link3,
+.Dirctors .j_link3,
+.Actress .j_link3 {
+    margin: 30px;
+}
+
+
+/* 2st actress--Karen Gillan----*/
+
+
+/* 3rd actress--Scarlett Johansson----*/
+
+.Actors .i_link1,
+.Dirctors .i_link1,
+.Actress .i_link1 {
+    margin: 80px;
+}
+
+.Actors .i_link2,
+.Dirctors .i_link2,
+.Actress .i_link2 {
+    margin: 60px;
+}
+
+.Actors .i_link3,
+.Dirctors .i_link3,
+.Actress .i_link3 {
+    margin: 70px;
+}
+
+
+/* 3rd actress----Scarlett Johansson---*/
+
+
+/* 4th actress --Kristen Stewort--*/
+
+.Actors .k_link1,
+.Dirctors .k_link1,
+.Actress .k_link1 {
+    margin: 40px;
+}
+
+.Actors .k_link2,
+.Dirctors .k_link2,
+.Actress .k_link2 {
+    margin: 40px
+}
+
+.Actors .k_link3,
+.Dirctors .k_link3,
+.Actress .k_link3 {
+    margin: 40px;
+}
+
+
+/* 4th actress --Kristen Stewort--*/
+
+
+/* 5th actress --Angelina Jolia--- */
+
+.Actors .l_link1,
+.Dirctors .l_link1,
+.Actress .l_link1 {
+    margin: 80px;
+}
+
+.Actors .l_link2,
+.Dirctors .l_link2,
+.Actress .l_link2 {
+    margin: 80px;
+}
+
+.Actors .l_link3,
+.Dirctors .l_link3,
+.Actress .l_link3 {
+    margin: 90px;
+}
+
+
+/*5th actress --Angelina Jolia---*/
+
+
+/*6th actress --Amy Adams--- */
+
+.Actors .m_link1,
+.Dirctors .m_link1,
+.Actress .m_link1 {
+    margin: 75px;
+}
+
+.Actors .m_link2,
+.Dirctors .m_link2,
+.Actress .m_link2 {
+    margin: 80px;
+}
+
+.Actors .m_link3,
+.Dirctors .m_link3,
+.Actress .m_link3 {
+    margin: 80px;
+}
+
+
+/*6th actress --Amy Adams--- */
+
+
+/* 7th actress ----Natalie Portman-----*/
+
+.Actors .n_link1,
+.Dirctors .n_link1,
+.Actress .n_link1 {
+    margin: 100px;
+}
+
+.Actors .n_link2,
+.Dirctors .n_link2,
+.Actress .n_link2 {
+    margin: 60px;
+}
+
+.Actors .n_link3,
+.Dirctors .n_link3,
+.Actress .n_link3 {
+    margin: 70px;
+}
+
+
+/*3rd actress ---Natalie Portman---*/
+
+
+/*********************************Directors******************************************/
+
+
+/* 1st dirrectir Christopher Nolan */
+
+.Actors .o_link1,
+.Dirctors .o_link1,
+.Actress .o_link1 {
+    margin: 90px;
+}
+
+.Actors .o_link2,
+.Dirctors .o_link2,
+.Actress .o_link2 {
+    margin: 60px;
+}
+
+.Actors .o_link3,
+.Dirctors .o_link3,
+.Actress .o_link3 {
+    margin: 100px;
+}
+
+
+/* 1st dirrectir Christopher Nolan */
+
+
+/* 2nd Quentin Tarantino Nolan */
+
+.Actors .p_link1,
+.Dirctors .p_link1,
+.Actress .p_link1 {
+    margin: 100px;
+}
+
+.Actors .p_link1,
+.Dirctors .p_link1,
+.Actress .p_link1 {
+    margin: 40px;
+}
+
+.Actors .p_link3,
+.Dirctors .p_link3,
+.Actress .p_link3 {
+    margin: 70px;
+}
+
+
+/* 2nd Quentin Tarantino Nolan */
+
+
+/* 3th Zack Snyder */
+
+.Actors .q_link1,
+.Dirctors .q_link1,
+.Actress .q_link1 {
+    margin: 120px;
+}
+
+.Actors .q_link2,
+.Dirctors .q_link2,
+.Actress .q_link2 {
+    margin: 40px;
+}
+
+.Actors .q_link3,
+.Dirctors .q_link3,
+.Actress .q_link3 {
+    margin: 100px;
+}
+
+
+/* 3th Zack Snyder */
+
+
+/* 4th Martin Scorsese */
+
+.Actors .r_link1,
+.Dirctors .r_link1,
+.Actress .r_link1 {
+    margin: 100px;
+}
+
+.Actors .r_link2,
+.Dirctors .r_link2,
+.Actress .r_link2 {
+    margin: 60px;
+}
+
+.Actors .r_link3,
+.Dirctors .r_link3,
+.Actress .r_link3 {
+    margin: 70px;
+}
+
+
+/* 4th Martin Scorsese */
+
+
+/* 5th Woody Allen */
+
+.Actors .s_link1,
+.Dirctors .s_link1,
+.Actress .s_link1 {
+    margin: 100px;
+}
+
+.Actors .s_link2,
+.Dirctors .s_link2,
+.Actress .s_link2 {
+    margin: 50px;
+}
+
+.Actors .s_link3,
+.Dirctors .s_link3,
+.Actress .s_link3 {
+    margin: 30px;
+}
+
+
+/* 5th Woody Allen */
+
+.Actors a:hover,
+.Dirctors a:hover,
+.Actress a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.Actors a,
+.Dirctors a,
+.Actress a {
+    text-decoration: none;
+}
+
+
+/* End About me */
+
+
+/* Start Contact me */
+
+.Actors .contact,
+.Dirctors .contact,
+.Actress .contact {
+    background-color: #252F31;
+    overflow: hidden;
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+
+.Actors .contact .info h2,
+.Dirctors .contact .info h2,
+.Actress .contact .info h2 {
+    color: #FFF;
+}
+
+.Actors .contact .info p,
+.Dirctors .contact .info p,
+.Actress .contact .info p,
+.Actors strong,
+.Dirctors strong,
+.Actress strong {
+    color: #D1D6DA;
+}
+
+.Actors .contact .info ul li,
+.Dirctors .contact .info ul li,
+.Actress .contact .info ul li {
+    color: #D1D6DA;
+}
+
+.Actors .contact .info,
+.Dirctors .contact .info,
+.Actress .contact .info {
+    width: 50%;
+    margin-right: 5%;
+}
+
+.Actors .contact .form,
+.Dirctors .contact .form,
+.Actress .contact .form {
+    width: 45%;
+}
+
+.Actors .contact .form label,
+.Dirctors .contact .form label,
+.Actress .contact .form label {
+    display: block;
+    color: #D1D6DA;
+}
+
+.Actors .contact .form input[type="text"],
+.Dirctors .contact .form input[type="text"],
+.Actress .contact .form input[type="text"] {
+    background-color: #4B5557;
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.Actors .contact .form input[type="number"],
+.Dirctors .contact .form input[type="number"],
+.Actress .contact .form input[type="number"] {
+    background-color: #4B5557;
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.Actors .contact .form textarea,
+.Dirctors .contact .form textarea,
+.Actress .contact .form textarea {
+    background-color: #4B5557;
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+.Actors .contact .form input[type="button"],
+.Dirctors .contact .form input[type="button"],
+.Actress .contact .form input[type="button"] {
+    background-color: #191E22;
+    color: #FFF;
+    padding: 10px 20px;
+    border: 0;
+    margin-top: 10px;
+}
+
+
+/* end Contact me */
+
+
+/* Start footer */
+
+.Actors .footer,
+.Dirctors .footer,
+.Actress .footer {
+    background-color: #191E22;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.Actors .footer p,
+.Dirctors .footer p,
+.Actress .footer p {
+    text-align: center;
+    color: #6A6E71;
+}
+
+.Actors .footer span,
+.Dirctors .footer span,
+.Actress .footer span {
+    text-align: center;
+    color: #EEE;
+    font-size: 20px;
+}
+
+.Actors .footer ul,
+.Dirctors .footer ul,
+.Actress .footer ul {
+    padding: 10px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.Actors .footer ul li,
+.Dirctors .footer ul li,
+.Actress .footer ul li {
+    display: inline-block
+}
+
+
+/* End footer */
+
+
+/* Start My Frame work */
+
+.Actors .my-button,
+.Dirctors .my-button,
+.Actress .my-button {
+    background: none;
+    cursor: pointer;
+    color: #2DCC78;
+    border: 3px solid #2DCC78;
+    padding: 10px 30px;
+}
+
+.Actors .fl-left,
+.Dirctors .fl-left,
+.Actress .fl-left {
+    float: left;
+}
+
+
+/* Floating Element left*/
+
+.Actors p,
+.Dirctors p,
+.Actress p {
+    line-height: 1.7;
+    color: #888;
+}
+
+.Actors h2,
+.Dirctors h2,
+.Actress h2,
+.Actors h3,
+.Dirctors h3,
+.Actress h3 {
+    color: #555;
+}
+
+
+/* End My Frame work */

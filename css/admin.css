@@ -1,0 +1,113 @@
+.admin .containerr {
+    margin: auto;
+    width: auto;
+    text-align: center;
+}
+
+
+/*end body style*/
+
+
+/*---------------------------header----------------------------------*/
+
+.admin .header {
+    background-color: #252F31;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.admin .title {
+    font-size: 30px;
+    color: #EEE;
+    text-decoration-line: none;
+    padding: 0px 45px;
+}
+
+.admin .title span {
+    color: #2DCC78;
+}
+
+.admin .title:hover {
+    font-size: 30px;
+    color: #EEE;
+    text-decoration-line: none;
+    padding: 0px 45px;
+}
+
+.admin nav ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.admin .nav {
+    text-decoration-line: none;
+    color: #EEE;
+    padding: 0px 15px;
+}
+
+.admin .nav:hover {
+    color: #2DCC78;
+}
+
+
+/*end header style*/
+
+
+/*start buttons styles*/
+
+.admin .btnn {
+    border: 3px solid #000;
+    margin-left: 100px;
+    border-radius: 50%;
+    padding: 0px;
+}
+
+.admin .b1:hover {
+    padding: 38px;
+}
+
+.admin .b2:hover {
+    padding: 38px;
+}
+
+.admin .b3:hover {
+    padding: 38px;
+}
+
+.admin .b4:hover {
+    padding: 38px;
+}
+
+.admin .b5:hover {
+    padding: 38px;
+}
+
+.admin .b1 {
+    border-radius: 50%;
+    padding: 40px;
+    background-color: cadetblue;
+}
+
+.admin .b2 {
+    border-radius: 50%;
+    padding: 40px;
+    background-color: crimson;
+}
+
+.admin .b3 {
+    border-radius: 50%;
+    padding: 40px;
+    background-color: darkmagenta;
+}
+
+.admin .b4 {
+    border-radius: 50%;
+    padding: 40px;
+    background-color: darkslategray;
+}
+
+.admin .b5 {
+    border-radius: 50%;
+    padding: 40px;
+    background-color: gold;
+}

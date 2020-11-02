@@ -1,0 +1,388 @@
+.home * {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.home *::selection {
+    background-color: #24890D;
+    color: black;
+}
+
+
+/*body style*/
+
+.home .containerr {
+    margin: auto;
+    width: 1170px;
+}
+
+
+/*end body style*/
+
+
+/*---------------------------header----------------------------------*/
+
+.home #check {
+    color: #24890D;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 1px 4px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.home #check:hover {
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+.home #x:hover {
+    font-size: 22px;
+    background-color: lightgray;
+}
+
+.home .header {
+    background-color: #252F31;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.home .title {
+    font-size: 30px;
+    color: #EEE;
+    text-decoration-line: none;
+    padding: 0px 45px;
+}
+
+.home .title span {
+    color: #2DCC78;
+}
+
+.home.title:hover {
+    font-size: 30px;
+    color: #EEE;
+    text-decoration-line: none;
+    padding: 0px 45px;
+}
+
+.home nav ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.home .nav {
+    text-decoration-line: none;
+    color: #EEE;
+    padding: 0px 15px;
+}
+
+.home .nav:hover {
+    color: #2DCC78;
+}
+
+
+/*end header style*/
+
+
+/*-----------------------------side-----------------------------*/
+
+.home div.side {
+    margin-top: -50px;
+    position: absolute;
+    display: none;
+    background-color: #252F31;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid #1e2324;
+    border-top: 3px solid #2DCC78;
+    line-height: 50px;
+    z-index: 14;
+}
+
+.home .side li {
+    padding: 20px;
+    text-align: left;
+}
+
+.home .side a {
+    color: #EEE;
+    font-size: 22px;
+}
+
+.home .side a:hover {
+    color: #2DCC78;
+    text-decoration-line: none;
+}
+
+.home #x {
+    position: absolute;
+    color: #24890D;
+    font-size: 20px;
+    font-weight: 400;
+    right: 20px;
+    top: 20px;
+    padding: 1px 4px;
+    cursor: pointer;
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.home li.team {
+    font-size: 36px;
+    color: #888;
+    font-weight: 800;
+}
+
+.home .team span {
+    color: #2DCC78;
+    font-size: 42px;
+    font-weight: bolder;
+}
+
+
+/*---------------------------middle----------------------------------*/
+
+.home .container {
+    margin: 50px 0px;
+    overflow: hidden;
+    z-index: 1;
+    width: 1250;
+    border: 10px solid #2DCC78;
+    border-radius: 50px;
+}
+
+.home .sliderimg {
+    display: flex;
+}
+
+.home img {
+    height: 400px;
+    width: 100%;
+}
+
+.home #prev {
+    top: 200px;
+    position: absolute;
+    left: 1%;
+    z-index: 10;
+    font-size: 35px;
+    color: black;
+    opacity: .6;
+    cursor: pointer;
+}
+
+.home #prev:hover {
+    font-size: 2em;
+    opacity: .8;
+    background-color: #2DCC78;
+}
+
+.home #nextt {
+    top: 200px;
+    position: absolute;
+    left: 95%;
+    z-index: 10;
+    font-size: 35px;
+    color: black;
+    opacity: .6;
+    cursor: pointer;
+}
+
+.home #nextt:hover {
+    font-size: 2em;
+    opacity: .8;
+    background-color: #2DCC78;
+}
+
+
+/*end meddle*/
+
+
+/*------------------------------main------------*/
+
+.home p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #888;
+}
+
+.home .main h2 {
+    padding: 10px;
+    font-size: 24px;
+    background-color: #252F31;
+    color: #2DCC78;
+    border-radius: 10px;
+}
+
+.home .main h2:hover {
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.home .main {
+    display: flex;
+    margin: 60px auto;
+    border-bottom: 1px groove #252F31;
+    border-top: 1px groove #252F31;
+    border-radius: 20px;
+}
+
+.home .right,
+.home .left,
+.home .middle {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.home .left img,
+.home .middle img,
+.home .right img {
+    object-fit: contain;
+    background-color: #2DCC78;
+    border-radius: 10px;
+}
+
+.home .left img:hover,
+.home .middle img:hover,
+.home .right img:hover {
+    position: relative;
+    top: 6px;
+}
+
+
+/* Start Contact me */
+
+.home .contact {
+    background-color: #252F31;
+    overflow: hidden;
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+
+.home .info {
+    width: 60%;
+}
+
+.home .contact .info h2 {
+    color: #FFF;
+}
+
+.home .contact .info p,
+strong {
+    color: #D1D6DA;
+}
+
+.home .contact .info ul li {
+    color: #D1D6DA;
+}
+
+.home .contact .info {
+    width: 50%;
+    margin-right: 5%;
+}
+
+.home .contact .form {
+    width: 45%;
+}
+
+.home .contact .form label {
+    display: block;
+    color: #D1D6DA;
+}
+
+.home .contact .form input[type="text"] {
+    background-color: #4B5557;
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.home .contact .form input[type="number"] {
+    background-color: #4B5557;
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.home .contact .form textarea {
+    background-color: #4B5557;
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+.home .contact .form input[type="button"] {
+    background-color: #191E22;
+    color: #FFF;
+    padding: 10px 20px;
+    border: 0;
+    margin-top: 10px;
+}
+
+
+/* Start Contact me */
+
+
+/* Start footer */
+
+.home .footer {
+    background-color: #191E22;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.home .footer p {
+    text-align: center;
+    color: #6A6E71;
+}
+
+.home .footer span {
+    text-align: center;
+    color: #EEE;
+    font-size: 20px;
+}
+
+
+/* End footer */
+
+
+/* Start My Frame work */
+
+.home .my-button {
+    background: none;
+    cursor: pointer;
+    color: #2DCC78;
+    border: 3px solid #2DCC78;
+    padding: 10px 30px;
+}
+
+.home .fl-left {
+    float: left;
+}
+
+
+/* Floating Element left*/
+
+.home p {
+    line-height: 1.7;
+    color: #888;
+}
+
+.home h2,
+.home h3 {
+    color: #555;
+}
+
+
+/* End My Frame work */
